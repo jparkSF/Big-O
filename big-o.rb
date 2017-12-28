@@ -53,6 +53,15 @@ def search(arr, target)
 end
 #O(n)
 
+def searchity_search(arr, target)
+  results = []
+  arr.each do |el|
+    results << search(arr, target + el)
+  end
+
+  results  
+end
+#O(n^2)
 
 
 
