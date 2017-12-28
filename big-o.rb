@@ -61,7 +61,7 @@ def searchity_search(arr, target)
 
   results  
 end
-#O(n^2)
+#O(n)
 
 def searchity_search_2(arr, target)
   results = []
@@ -71,7 +71,7 @@ def searchity_search_2(arr, target)
 
   results  
 end
-#O(n^2)
+#O(n)
 
 
 
