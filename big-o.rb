@@ -22,5 +22,14 @@ def print_arr_2(arr)
     puts el
   end
 end
-#
+#nlog(n)
+
+
+def print_arr_3(arr)
+  arr.each do |el|
+    break if el == arr.length/2 - 1
+    puts el
+  end
+end
+
 
