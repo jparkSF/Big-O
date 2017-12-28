@@ -44,6 +44,9 @@ def print_arr_4(arr)
 
   puts arr.last
 end
+#nlog(n)
+
+
 
 
 
