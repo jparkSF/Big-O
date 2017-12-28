@@ -46,6 +46,13 @@ def print_arr_4(arr)
 end
 #nlog(n)
 
+def search(arr, target)
+  arr.each_with_index do |el, idx|
+    return idx if el == target
+  end
+end
+#O(n)
+
 
 
 
