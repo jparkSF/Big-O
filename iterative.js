@@ -20,6 +20,7 @@ let iterative_2 = (n) => {
     }
   }
 }
+// O(n^2)
 
 let iterative_3 = (n, m) => {
   let notes = ["do", "rei", "mi", "fa", "so", "la", "ti", "do"];
