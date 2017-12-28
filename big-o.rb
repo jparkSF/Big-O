@@ -74,5 +74,41 @@ end
 #O(n)
 
 
+def rec_mystery(n)
+  return n if n < 5
+
+  rec_mystery(n - 5)
+end
+#O(n)
+
+def rec_mystery_2(n)
+  return 0 if n == 0
+
+  rec_mystery_2(n/5) + 1
+end
+#nlog(n)
+
+void rec_mystery_3(int n, int m, int o)
+{
+  if (n <= 0)
+  {
+    printf("%d, %d\n", m, o);
+  }
+  else
+  {
+    rec_mystery_3(n-1, m+1, o);
+    rec_mystery_3(n-1, m, o+1);
+  }
+}
+#2^n
+
+class Array
+  def grab_bag
+    return [[]] if empty?
+    bag = take(count - 1).grab_bag
+    bag.concat(bag.map { |handful| handful + [last] })
+  end
+end
+#2^n
 
 
